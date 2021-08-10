@@ -1,0 +1,33 @@
+<div class= "d-flex justify-content-center mt-50">
+<div class="container-fluid bg-dark" style = "height : 100vh">
+
+    <form action="/productos" method = post>
+    <div class="form-group">
+        <input type="text" name="aBuscar" placeholder="Ingrese un producto a buscar" class="form-control">
+    </div>
+    <button class="btn btn-info">Buscar</button>
+    </form>
+    <table class ="table text-white">
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Descripción:</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>-</th>
+        </tr>
+        {{#each productos}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nombre}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{precio}}</td>
+            <td>{{stock}}</td>
+            <td>{{nombreCategoria}}</td>
+            <td> <a href="/productos/single/{{id}}" class = "btn btn-light">Ver más</a></td>
+            <td> <a href="/productos/buy/{{id}}" class = "btn btn-success">Agregar a carrito</a></td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

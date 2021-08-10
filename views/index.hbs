@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid" style="height:5vh">
+    <a class="navbar-brand text-light" href="#">EL BARISTA LOCO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex collapse navbar-collapse text-light justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-light" href="/productos">Nuestros Cafés</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container d-flex justify-content-end">
+                <a class="btn btn-light"data-bs-toggle="modal" data-bs-target="#modalIniciarsesion">Iniciar Sesión</a>
+                <a class="btn btn-warning" href= "/registro">Registrarse</a>
+                
+    </div>
+  </div>
+</nav>
+
+<!-- INICIAR SESION-->
+<div class="modal" id= "modalIniciarsesion" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Iniciar sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid bg-dark m-0" style="height : 100vh">
+    <div class="row justify-content-center align-items-center" style="height : 100vh">
+        <div class="col-7 text-light">
+            <form method="post" action= "/login/logged">
+            <div class="form-group">
+                <label for="username">Nombre de usuario <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name = "username" id = "username">
+            </div>
+            <div class="form-group">
+                <label for="pass">Contraseña <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" name = "pass" id = "pass">
+            </div>
+            <div class = "d-grid gap-2">
+                <button type="submit" class="btn btn-info mt-3">Login</button>
+            </div>
+            </form>
+                <p class = "text-danger justify-content-center">{{message}}</p>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+<br>
+<div class="container justify-content-around">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2020/02/tipos-de-cafe.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://dam.ngenespanol.com/wp-content/uploads/2019/10/datos-sobre-el-cafe.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://s1.eestatic.com/2015/02/27/cocinillas/cocinillas_14258653_115901875_1024x576.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+<br>
+<div class="container justify-content-center">
+    <h2>SOBRE NOSOTROS</h2>
+    <h4>EL BARISTA LOCO nació de un grupo de amigos que se preguntaron ¿Y si tostamos café?</h4>
+    <h4>Al principio se hablaba en broma, algunos comentarios y mini lluvias de ideas. Pero cuando nos dimos cuenta teníamos todo el negocio planeado, solo faltaba ponerlo en marcha.</h4>
+    <h4>Asique acá estamos, haciendo café tostado en la casa de uno y empaquetando en la de otro, mientras que el resto maneja las redes.</h4>
+    <h4>Los invitamos a pasar por nuestro local donde ofrecemos degustaciones todos los días y a navegar por nuestra página para conocer un poco lo lindo del mundo del café.</h4>
+  
+  </div>
+  <br>
+
+  <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                         <h3 class="text-muted mb-md-0 mb-5 bold-text">EL BARISTA LOCO</h3>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>CONTACTO</b></h6>
+                         <ul class="list-unstyled">
+                             <li>elbaristaloco@gmail.com</li>
+                             <li>11-1111-1111</li>
+
+                         </ul>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>DIRECCIÓN</b></h6>
+                         <p class="mb-1">Av. de Mayo 1000</p>
+                         <p>Microcentro</p>
+                     </div>
+                 </div>
+                 <div class="row ">
+
+                 </div>
+             </div>
+         </div>
+     </footer>
+ </div>
